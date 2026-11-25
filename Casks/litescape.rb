@@ -2,11 +2,11 @@ cask "litescape" do
   arch arm: "arm64", intel: "x86_64"
   platform_suffix = on_system_conditional macos: "mac-universal.dmg", linux: "linux-#{arch}.AppImage"
 
-  version "0.1.0"
-  sha256 arm:          "90c3807cb684b7de6db5f931a068d9d59648c8154f4284b510e68dacd40acfd6",
-         intel:        "90c3807cb684b7de6db5f931a068d9d59648c8154f4284b510e68dacd40acfd6",
-         arm64_linux:  "7c4a715b4df6604dcc8fb3eb7c2e15a6a357ae37f20a854ca017d26542507e99",
-         x86_64_linux: "b59c2a03a0c27da6475ab157b4d6e494e2b0eeaa18074eab351f23c20e40b94c"
+  version "0.2.0"
+  sha256 arm:          "d4c9484f8d54f91097f5b47fea8960f4a0bd2f05995a301665f83548c9c78153",
+         intel:        "d4c9484f8d54f91097f5b47fea8960f4a0bd2f05995a301665f83548c9c78153",
+         arm64_linux:  "ec2495365fbcba1c132e406be56c9a0ecfad9db08e4f7385efa6714df8848507",
+         x86_64_linux: "11112ae93f19076887d1759bfb323c55afa60ff61bcd9f307ed321c22e17215e"
 
   on_macos do
     app "Litescape.app"
